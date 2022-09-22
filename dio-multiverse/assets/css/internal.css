@@ -1,0 +1,64 @@
+@import url('reset.css');
+@import url('global.css');
+@import url('components/_navigator.css');
+@import url('components/_pills.css');
+
+.s-wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.s-wrapper .s-left-column {
+    width: 100px;
+    height: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.s-wrapper .s-main-content {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    padding-left: 130px;    
+}
+
+.s-wrapper .s-main-content__top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.s-wrapper .s-main-content__bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.s-wrapper .s-main-content .s-logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.s-wrapper .s-main-content__top .s-description {
+    background-color: rgba(0, 0, 0, .7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.s-wrapper .s-main-content__top .s-description .s-description__text p {
+    color: white;
+    line-height: 170%;    
+}
+
+.s-wrapper
