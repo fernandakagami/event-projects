@@ -66,9 +66,9 @@ img {
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width:750px) {
     .content {
-        max-width: 900px;
+        max-width: 750px;
         margin: 0 auto;
     }
 
@@ -77,5 +77,13 @@ img {
     }
 }
 
+@media screen and (min-width: 900px) {
+    .content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
-
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
