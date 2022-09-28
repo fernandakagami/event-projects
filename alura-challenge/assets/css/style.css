@@ -1,0 +1,380 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+}
+
+.header-container {
+    width: 360px;
+    margin: 25px auto;
+    padding: 0 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-alura-one {
+    display: flex;
+    align-items: center;
+}
+
+.logo-alura-one img {
+    width: 30px;
+    padding-right: 5px;
+}
+
+.logo-alura-one h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+b {
+    color:#2A7AE4;
+}
+
+.logo button {
+    border: 1px solid #2A7AE4;;
+    background-color: white;
+    color: #2A7AE4;
+    font-size: 14px;
+    padding: 12px 50px;
+}
+
+.image-search {
+    width: 20px;
+}
+
+.banner-container {    
+    background-image: url('../img/hero.png');
+    height: 23vh; 
+    background-size: 100vw auto;
+    background-position: center;
+    background-repeat: no-repeat;  
+    margin-bottom: 10px; 
+}
+
+.banner {    
+    width: 360px;
+    margin: 0 auto;
+    position: relative;    
+}
+
+.promotional-banner {
+    position: absolute;
+    top: 83px;
+    left: 15px;
+}
+
+.promotional-text {    
+    color: white; 
+    margin-bottom: 10px;  
+
+}
+
+.promotional-text h2 {
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.promotional-text p {
+    font-size: 14px;
+}
+
+.promotional-banner button {    
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #2A7AE4;
+    padding: 12px 16px;
+}
+
+.container {
+    width: 360px;
+    margin: 0 auto;       
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 17px 15px 17px;
+}
+
+.container-title h3 {
+    font-size: 22px;
+    line-height: 26px;    
+    font-weight: bold;
+}
+
+.container-title a {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+.container-title a img {
+    width: 10px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10px;
+}
+
+.product li {
+    margin: 0 auto 15px;
+}
+
+.product img {
+    padding-bottom: 5px;
+}
+
+.description {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.price {
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+
+.product a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2A7AE4;
+}
+
+.link-form-background {
+    background-color: #EAF2FD;
+    padding: 20px 0;
+}
+
+.link-form-container {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.logo-alura-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding-bottom: 20px;
+}
+
+.logo-alura-two img {
+    width: 40px;
+    padding-right: 3px;
+ }
+
+.logo-alura-two h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links-list li {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.links-list a {
+    text-decoration: none;    
+}
+
+.form-container {
+    background-color: #EAF2FD;     
+}
+
+.form-message {        
+    margin: 0 15px;
+}
+
+.form-message p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control { 
+    border: 1px solid white;   
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 4px;
+    width: 100%;
+    padding: 30px 0 10px 10px;
+    font-size: 16px;
+  }
+  
+  .form-control-label {
+    position: absolute;    
+    top: 10px;
+    left: 14px;    
+    border: none;
+    font-size: 12px;
+    color: #A2A2A2;
+    text-transform: capitalize;    
+  }
+
+  textarea {
+    border: 1px solid white;   
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 4px;
+    width: 100%;
+    height: 10vh;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+.form-button {
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #2A7AE4;
+    padding: 12px 16px;    
+}
+
+footer {
+    width: 360px;
+    margin: 30px auto;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;    
+}
+
+@media screen and (min-width: 700px) {
+    .header-container {
+        width: 700px;                
+    }
+    
+    .banner-container {
+        height: 35vh;
+        margin-bottom: 30px;
+    }
+
+    .banner {    
+        width: 700px;            
+    }
+    
+    .promotional-banner {
+        top: 175px;
+        left: 0;        
+    }
+    
+    .promotional-text {    
+        margin-bottom: 15px;      
+    }
+    
+    .promotional-text h2 {
+        padding-bottom: 20px;        
+        font-size: 52px;
+    }
+    
+    .promotional-text p {
+        font-size: 22px;
+    }
+    
+    .container {
+        width: 700px;       
+        margin: 0 auto 40px; 
+    }
+    
+    .container-title {        
+        margin: 0 0 20px;
+    }
+    
+    .container-title a {        
+        font-size: 16px;
+    }
+    
+    .container-title a img {
+        width: 10px;
+    }
+    
+    .product {
+        display: flex;        
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    .product li {
+        margin: 0;
+    }
+        
+    .product a {
+        font-size: 16px;   
+    }
+
+    .link-form-background {    
+        padding: 30px 0;
+    }
+
+    .link-form-container {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          width: 700px;           
+    }
+
+    .logo-alura-two {       
+        justify-content: initial;
+    }
+
+    .logo-alura-two h1 {
+        font-size: 25px;
+    }
+    
+    .links-list li {
+        text-align: initial;        
+    }
+    
+    .form-message p {        
+        padding-bottom: 10px;
+    }
+    
+    textarea {
+        height: 7vh;        
+      }
+}
+
+@media screen and (min-width: 1000px) {
+    .header-container {
+        width: 1000px;
+    }
+
+    .banner {
+        width: 1000px;
+    }
+
+    .promotional-banner {
+        top: 165px;
+    }
+
+    .container {
+        width: 1000px;
+    }
+
+    .link-form-container {        
+        grid-template-columns: 1fr 1fr;
+        width: 1000px;
+    }
+
+    .link-form-background {
+        padding: 50px 0;
+    }
+
+    .links-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: flex-start;
+    }   
+}
