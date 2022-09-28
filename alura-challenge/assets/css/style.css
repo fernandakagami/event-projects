@@ -233,6 +233,20 @@ b {
     height: 10vh;
     font-size: 16px;
     margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Raleway', sans-serif;
+    opacity: 1; /* Firefox */
+  }
+  
+  .textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .textarea::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Raleway', sans-serif;
   }
 
 .form-button {
@@ -377,4 +391,5 @@ footer {
         justify-content: space-between;
         align-items: flex-start;
     }   
+    
 }
