@@ -3,8 +3,16 @@ body {
     color: #464646;
 }
 
+.show {
+    display: none;
+}
+
+.show .showing {
+    display: block;
+}
+
 .header-container {
-    width: 360px;
+    width: 380px;
     margin: 25px auto;
     padding: 0 10px;
 }
@@ -34,7 +42,7 @@ b {
     color:#2A7AE4;
 }
 
-.logo button {
+.logo-login button {
     border: 1px solid #2A7AE4;;
     background-color: white;
     color: #2A7AE4;
@@ -42,9 +50,48 @@ b {
     padding: 12px 50px;
 }
 
-.image-search {
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: white;    
+    cursor: pointer;
+    padding: 18px;    
+    border: none;
+    outline: none;
+    font-size: 15px;
+    display: block;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content-search {
+    display: none;
+    overflow: hidden;    
+  }
+
+  .content-search input {
+    width: 90px;
+    border: 1px solid #2A7AE4;;
+    background-color: white;
+    color: #2A7AE4;
+    font-size: 14px;
+    padding: 8px
+  }
+
+.collapsible img {
     width: 20px;
 }
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Raleway', sans-serif;
+    opacity: 1; /* Firefox */
+  }
+  
+  .textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .textarea::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Raleway', sans-serif;
+  }
 
 .banner-container {    
     background-image: url('../img/hero.png');
@@ -56,14 +103,14 @@ b {
 }
 
 .banner {    
-    width: 360px;
+    width: 380px;
     margin: 0 auto;
     position: relative;    
 }
 
 .promotional-banner {
     position: absolute;
-    top: 83px;
+    top: 55px;
     left: 15px;
 }
 
@@ -92,7 +139,7 @@ b {
 }
 
 .container {
-    width: 360px;
+    width: 380px;
     margin: 0 auto;       
 }
 
@@ -100,7 +147,7 @@ b {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 17px 15px 17px;
+    margin: 0 10px 15px 10px;
 }
 
 .container-title h3 {
@@ -109,28 +156,29 @@ b {
     font-weight: bold;
 }
 
-.container-title a {
-    text-decoration: none;
+.container-title button {
     color: #2A7AE4;
     font-size: 14px;
     font-weight: bold;    
+    background-color: white;
+    border: none;
 }
 
-.container-title a img {
+.container-title button img {
     width: 10px;
 }
 
 .product {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 10px 20px;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
 }
 
 .product li {
     margin: 0 auto 15px;
 }
 
-.product img {
+.product img {    
     padding-bottom: 5px;
 }
 
@@ -157,7 +205,7 @@ b {
 }
 
 .link-form-container {
-    width: 360px;
+    width: 380px;
     margin: 0 auto;
 }
 
@@ -258,7 +306,7 @@ b {
 }
 
 footer {
-    width: 360px;
+    width: 380px;
     margin: 30px auto;
     font-size: 16px;
     line-height: 19px;
@@ -270,6 +318,11 @@ footer {
         width: 700px;                
     }
     
+    .content-search input {
+        width: 200px;                
+      }
+
+
     .banner-container {
         height: 35vh;
         margin-bottom: 30px;
@@ -280,7 +333,7 @@ footer {
     }
     
     .promotional-banner {
-        top: 175px;
+        top: 125px;
         left: 0;        
     }
     
@@ -315,13 +368,16 @@ footer {
     }
     
     .product {
-        display: flex;        
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr 1fr;        
         margin: 0 0 40px;
     }
     
     .product li {
-        margin: 0;
+        margin: 0 0 20px;
+    }
+
+    .product li img {
+        width: 160px;
     }
         
     .product a {
@@ -360,6 +416,14 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+    .content-search input {
+        width: 300px;                
+      }    
+
+    .show {
+        display: block;
+    }
+
     .header-container {
         width: 1000px;
     }
@@ -369,11 +433,15 @@ footer {
     }
 
     .promotional-banner {
-        top: 165px;
+        top: 135px;
     }
 
     .container {
         width: 1000px;
+    }    
+
+    .product {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;                
     }
 
     .link-form-container {        
