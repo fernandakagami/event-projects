@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #fae3d9;    
+    background-color: #616a7b;    
 }
 
 .resume-contents {
@@ -15,11 +15,11 @@ body {
 }
 
 .left-section {    
-    background-color: #7fbbc5;
+    background-color: #6e2141;
 }
 
 .right-section {
-    background-color: #bbded7;
+    background-color: #b63e73;
     border-radius: 0px 60px 0px 0px;
 }
 
@@ -29,17 +29,17 @@ body {
 
 .profile {
     width: 100%;
-    border-bottom: 2px solid #1B2631;
+    border-bottom: 2px solid #2c0611;
 }
 
 .profile .profile-image {
     width: 100%;
     border-radius: 50%;
-    border: 8px solid #1B2631;
+    border: 8px solid #2c0611;
 }
 
 .name {
-    color: #D6DBDF;
+    color: #8a7f88;
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -122,7 +122,7 @@ body {
 }
 
 .right-title {
-    color: #e6b29d;
+    color: #2c0611;
     font-size: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -140,7 +140,7 @@ body {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2rem;
-    color: #F1F8FD;
+    color: #ff999c;
 }
 
 .experience-contents,
@@ -148,8 +148,7 @@ body {
 .awards-contents {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 2rem;
-    color: #F1F8FD;
+    padding-bottom: 2rem;    
 }
 
 .exp-company-name,
