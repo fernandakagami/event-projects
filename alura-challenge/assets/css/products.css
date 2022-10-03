@@ -1,0 +1,170 @@
+@import url('reset.css');
+@import url('global.css');
+@import url('link-footer-style.css');
+
+.header-container {
+    width: 380px;
+    margin: 15px auto;
+    padding: 0 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-alura-one {
+    display: flex;
+    align-items: center;
+}
+
+.logo-alura-one img {
+    width: 30px;
+    padding-right: 5px;
+}
+
+.logo-alura-one h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: white;    
+    cursor: pointer;
+    padding: 18px;    
+    border: none;
+    outline: none;
+    font-size: 15px;
+    display: block;
+}
+  
+  /* Style the collapsible content. Note: hidden by default */
+.content-search {
+    display: none;
+    overflow: hidden;        
+}
+
+.content-search input {
+    width: 200px;    
+    font-size: 14px;
+    padding: 10px;
+    background: #F5F5F5;    
+    background-image: url('../img/graysearch.png');
+    background-size: 1.3em;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: none;
+    border-radius: 20px;
+}
+
+.collapsible img {
+    width: 20px;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Raleway', sans-serif;
+    opacity: 1; /* Firefox */
+}
+  
+  .textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Raleway', sans-serif;
+}
+  
+  .textarea::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 380px;
+    margin: 0 auto;       
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 10px 15px 10px;
+}
+
+.container-title h1 {
+    font-size: 22px;
+    line-height: 26px;    
+    font-weight: bold;
+}
+
+.container-title a {
+    background-color: #2A7AE4;
+    font-size: 14px;
+    font-weight: bold;    
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.container-title button img {
+    width: 10px;
+}
+
+
+.product {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+}
+
+.product li {
+    margin: 0 auto 15px;
+}
+
+.product img {    
+    padding-bottom: 5px;
+}
+
+.description {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.price {
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+
+.code {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;  
+    font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+    .header-container {
+        width: 700px;                
+    }
+
+    .logo {
+        justify-content: flex-start;
+    }
+
+    .logo-alura-one {
+        margin-right: 20px;
+    }
+    
+    .content-search input {
+        width: 300px;   
+        border: none;             
+      }    
+}
+
+@media screen and (min-width: 1000px) {
+    .content-search input {
+        width: 450px;                
+      }    
+
+    .header-container {
+        width: 1000px;
+    }    
+}

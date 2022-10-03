@@ -28,6 +28,6 @@ var i;
 
 coll[0].addEventListener("click", function() {    
     var content = this.previousElementSibling;
-    content.style.display = "block";
+    content.style.display = "block";    
     coll[0].remove();
 })
