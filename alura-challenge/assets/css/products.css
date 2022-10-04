@@ -83,6 +83,11 @@ main {
 
 .container {
     width: 380px;
+    margin: 0 auto;
+}
+
+.container-margin {
+    margin: 0 20px;    
 }
 
 .container-title {
@@ -90,7 +95,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 20px 15px;
+    margin-bottom: 15px;
 }
 
 .container-title h1 {
@@ -112,7 +117,7 @@ main {
 .product {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;    
+    justify-content: space-between;    
     margin-bottom: 20px;
 }
 
@@ -144,7 +149,8 @@ main {
 
 @media screen and (min-width: 700px) {
     .header-container {
-        width: 700px;                
+        width: 700px;     
+        padding: 15px;           
     }
 
     .logo {
@@ -154,19 +160,79 @@ main {
     .logo-alura-one {
         margin-right: 20px;
     }
-    
+
     .content-search input {
         width: 300px;   
         border: none;             
       }    
+    
+    .container {
+        width: 700px;
+    }
+
+    .container-margin {
+        margin: 0;    
+    }    
+
+    .container-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .container-title h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .container-title a {
+        padding: 12px 16px;
+    }
+
+    .product {
+        grid-template-columns: auto auto auto auto;        
+    }
+
+    .product img {    
+        width: 20vw;        
+    }   
 }
 
-@media screen and (min-width: 1000px) {
-    .content-search input {
-        width: 450px;                
-      }    
+@media screen and (min-width: 1000px) {     
+    .show {
+        display: block;
+    }
 
     .header-container {
         width: 1000px;
     }    
+
+    .content-search input {
+        width: 450px;                
+      }  
+
+    .container {
+        width: 1000px;
+    }
+
+    .container-title h1 {        
+        font-size: 32px;
+        line-height: 38px;        
+    }
+
+    .container-title a {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .product {
+        grid-template-columns: auto auto auto auto auto auto;                
+    }
+
+    .product img {    
+        width: 10vw;
+    }  
 }

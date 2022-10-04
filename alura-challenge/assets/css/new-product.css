@@ -2,10 +2,14 @@
 @import url('global.css');
 @import url('link-footer-style.css');
 
+.show {
+    display: none;
+}
+
 .header-container {
     width: 380px;
-    margin: 15px auto;
-    padding: 0 15px;
+    margin: 25px auto;
+    padding: 0 10px;
 }
 
 .logo {
@@ -29,6 +33,19 @@
     font-weight: bold;
 }
 
+b {
+    color:#2A7AE4;
+}
+
+.logo-admin a {
+    border: 1px solid #2A7AE4;;
+    background-color: white;
+    color: #2A7AE4;
+    font-size: 14px;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: white;    
@@ -38,18 +55,18 @@
     outline: none;
     font-size: 15px;
     display: block;
-}
+  }
   
   /* Style the collapsible content. Note: hidden by default */
-.content-search {
+  .content-search {
     display: none;
-    overflow: hidden;        
-}
+    overflow: hidden;    
+  }
 
-.content-search input {
-    width: 200px;    
+  .content-search input {
+    width: 90px;
     font-size: 14px;
-    padding: 10px;
+    padding: 8px;
     background: #F5F5F5;    
     background-image: url('../img/graysearch.png');
     background-size: 1.3em;
@@ -57,7 +74,7 @@
     background-position: right;
     border: none;
     border-radius: 20px;
-}
+  }
 
 .collapsible img {
     width: 20px;
@@ -66,85 +83,92 @@
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-family: 'Raleway', sans-serif;
     opacity: 1; /* Firefox */
-}
+  }
   
   .textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
     font-family: 'Raleway', sans-serif;
-}
+  }
   
   .textarea::-ms-input-placeholder { /* Microsoft Edge */
     font-family: 'Raleway', sans-serif;
-}
+  }
 
-.form-login {
+
+main {
     background-color: #F5F5F5;
+    padding: 25px 0;
 }
 
-.login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.form-product {
     width: 380px;
-    margin: 0 auto;    
-    padding: 100px 0 80px;
-}    
-
-.begin-session {
-    text-align: center;
-    padding-bottom: 20px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-
+    margin: 0 auto;  
 }
 
-.login input {
-    width: 80%;
-    margin: 0 auto 20px;
-    padding: 10px;
-    border: 1px solid white;
+.form-product h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 0 10px 10px;
+}
+
+.form-new-product {
+    margin: 0 10px;
+}
+
+.form-label {
+    position: relative;
+}
+
+.form-label label {
+    position: absolute;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px;
+    color: #A2A2A2;
+}
+
+.form-label input {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 15px;
+    border: 1px solid white ;
     border-bottom: 1px solid #c4c4c4;
     border-radius: 4px;
-    font-size: 16px;
-    line-height: 20px;
 }
 
-.login button {
-    padding: 12px 35px;
-    gap: 10px;
-    background: #2A7AE4;
-    color: white;
+.form-new-product button {
+    width: 100%;
     border: none;
-    font-size: 14px;
-    line-height: 16px;
+    padding: 15px 0;
+    color: white;
+    background-color: #2A7AE4;
 }
 
 @media screen and (min-width: 700px) {
     .header-container {
-        width: 700px;                
+        width: 700px;        
     }
 
-    .logo {
-        justify-content: flex-start;
-    }
-
-    .logo-alura-one {
-        margin-right: 20px;
-    }
-    
     .content-search input {
-        width: 300px;   
-        border: none;             
-      }  
+        width: 200px;
+    }
+
+    .form-product {
+        width: 700px;        
+    }
+
 }
 
 @media screen and (min-width: 1000px) {
-    .content-search input {
-        width: 450px;                
-      }    
-
     .header-container {
-        width: 1000px;
-    }    
+        width: 1000px;        
+    }
+
+    .content-search input {
+        width: 300px;
+    }
+
+    .form-product {
+        width: 600px;        
+    } 
 }
