@@ -7,4 +7,4 @@ Alura Challenge
     <li>JavaScript</li>
 </ul>
 
-<a href="https://fernandakagami.github.io/event-projects/event03-alura-challenge/">Access to project</a>
+<a href="https://fernandakagami.github.io/event-projects/event03-alura-challenge/">Link to project</a>

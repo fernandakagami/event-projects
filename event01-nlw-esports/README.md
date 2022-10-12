@@ -10,5 +10,5 @@ Project build on Next Level Week event of Rocketseat. Explorer route.
 </ul>
 
 
-<a href="https://fernandakagami.github.io/event-projects/event01-nlw-esports/">Access to project</a>
+<a href="https://fernandakagami.github.io/event-projects/event01-nlw-esports/">Link to project</a>
 
