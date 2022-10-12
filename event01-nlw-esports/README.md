@@ -7,5 +7,5 @@ HTML
 CSS
 Git e Github
 
-<a href="https://fernandakagami.github.io/nlw-esports/">Access to project</a>
+<a href="https://fernandakagami.github.io/event-projects/event01-nlw-esports/">Access to project</a>
 

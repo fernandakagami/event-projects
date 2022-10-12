@@ -1,6 +1,8 @@
-# Spider-Man Multiverse
+Alura Challenge
 
-Project of Spider-Man Multiverse. It was done in a course. The course was made by Dio.
-Some changes in pastes were made to Gib Pages works.
+# Technology
+HTML
+CSS
+JavaScript
 
-<a href="https://fernandakagami.github.io/event-projects/dio-multiverse/index.html">Link to page</a>
+<a href="https://fernandakagami.github.io/event-projects/event03-alura-challenge/">Access to project</a>
