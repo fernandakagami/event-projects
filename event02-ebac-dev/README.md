@@ -3,9 +3,11 @@
 Dev Journey from EBAC
 
 # Technology
-HTML
-CSS
-Git e Github
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Git e Github</li>
+</ul>
 
 <a href="https://fernandakagami.github.io/event-projects/event02-ebac-dev/" target="_blank">Access to project</a>
 
