@@ -1,6 +1,6 @@
 NLW - Event of Rocketseat
 
-Project build on Next Level Week event oof Rocketseat. Explorer route.
+Project build on Next Level Week event of Rocketseat. Explorer route.
 
 # Technology
 HTML
