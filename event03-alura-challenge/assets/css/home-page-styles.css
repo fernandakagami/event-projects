@@ -2,8 +2,12 @@
 @import url('global.css');
 @import url('link-footer-style.css');
 
-.show {
+.no-show {
     display: none;
+}
+
+.show {
+    display: block;
 }
 
 .header-container {
@@ -95,7 +99,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 .banner-container {    
     background-image: url('../img/hero.png');
-    height: 23vh; 
+    height: 200px; 
     background-size: 100vw auto;
     background-position: center;
     background-repeat: no-repeat;  
@@ -210,7 +214,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 
     .banner-container {
-        height: 35vh;
+        height: 350px;
         margin-bottom: 30px;
     }
 
@@ -276,10 +280,6 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     .content-search input {
         width: 300px;                
       }    
-
-    .show {
-        display: block;
-    }
 
     .header-container {
         width: 1000px;

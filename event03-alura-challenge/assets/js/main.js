@@ -1,33 +1,44 @@
-function myFunction() {
-    var a = document.getElementsByClassName("show");
-    for (var i = 0; i < a.length; i++) {
-      a[i].style.display = "block";
-    }  
-   
-    var button = document.getElementsByClassName("loadMoreButton");
-    button[0].remove();  
+let loadMore = document.querySelectorAll(".loadMoreButton");
+let products = document.querySelectorAll(".product");
+let sizeWindow = parseInt(window.innerWidth);
+
+if (sizeWindow >= 1000) {  
+  let fullSize = document.querySelectorAll(".no-show");
+  for (let index = 0; index < 6; index++) {
+    fullSize[index].classList.add("show");
+    fullSize[index].classList.remove("no-show");    
+  } 
+  for (let i = 0; i < loadMore.length; i++) {
+    loadMore[i].addEventListener("click", function() {
+      let showing = products[i].querySelectorAll(".no-show");
+      console.log(showing);
+      for (let index = 6; index < showing.length; index++) {
+        showing[index].classList.add("show");
+        showing[index].classList.remove("no-show");
+      }
+      loadMore[i].remove();
+    });     
+  }    
+} else {
+  for (let i = 0; i < loadMore.length; i++) {
+    loadMore[i].addEventListener("click", function() {
+      let showing = products[i].querySelectorAll(".no-show");
+      console.log(showing);
+      for (let index = 0; index < showing.length; index++) {
+        showing[index].classList.add("show");
+        showing[index].classList.remove("no-show");
+      }
+      loadMore[i].remove();
+    });     
+  }  
 }
 
-//var showing = document.getElementsByClassName("show");
-//var button = document.getElementsByClassName("loadMoreButton");
-//var u;
+var coll = document.querySelector(".collapsible");
 
-//for (var i = 0; i < showing.length; i++) {
-//    button[0].addEventListener("click", function() {    
-//        if (showing[i].style.display === "none") {
-//            showing[i].style.display = "block";            
-//            button[0].remove();  
-//        }
-//});
-//}
-
-
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-coll[0].addEventListener("click", function() {    
+coll.addEventListener("click", function() {    
     var content = this.previousElementSibling;
     content.style.display = "block";    
-    coll[0].remove();
+    coll.remove();
 })
+
+
