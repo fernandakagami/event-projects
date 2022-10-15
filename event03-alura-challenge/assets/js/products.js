@@ -26,7 +26,6 @@ function sizeOfWindow(sizeWindow) {
 
 sizeOfWindow(sizeWindow);
 
-
 function moreProduct() {  
   let products = document.querySelectorAll(".product"); 
   for (let i = 0; i < loadMore.length; i++) {  
@@ -41,16 +40,7 @@ function moreProduct() {
     });     
   }    
 }
-
 moreProduct();
 
-
-var coll = document.querySelector(".collapsible");
-
-coll.addEventListener("click", function() {    
-    var content = this.previousElementSibling;
-    content.style.display = "block";    
-    coll.remove();
-})
 
 
