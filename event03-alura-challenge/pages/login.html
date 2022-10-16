@@ -31,8 +31,14 @@
         <section class="form-login">
             <form class="login" action="products.html">
                 <label class="begin-session">Iniciar Sessão</label>
-                <input type="email" id="email" name="email" placeholder="Escreva seu email" required>
-                <input type="password" id="senha" name="senha" placeholder="Escreva sua senha" required>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Escreva seu email" data-tipo="email" required>
+                    <span></span>
+                </div>
+                <div>
+                    <input type="password" id="senha" name="senha" placeholder="Escreva sua senha" data-tipo="senha" required>
+                    <span></span>
+                </div>
                 <button type="submit">Entrar</button>
             </form>
         </section>            
@@ -59,10 +65,14 @@
                 <p>Fale conosco</p>
                 <form action="#" method="get">
                     <div class="form-group">
-                        <input id="name" type="text" name="name" class="form-control" placeholder="José Alencar" required>
                         <label for="name" class="form-control-label">Nome </label>
+                        <input id="name" type="text" name="name" class="form-control" placeholder="José Alencar" data-tipo="nome" required>                        
+                        <span></span>
                     </div>                 
-                    <textarea id="message" name="message" placeholder="Escreva sua mensagem." required></textarea>
+                    <div>
+                        <textarea id="message" name="message" placeholder="Escreva sua mensagem." data-tipo="mensagem" required></textarea>
+                        <span></span>    
+                    </div>                    
                     <button type="submit" class="form-button">Enviar Mensagem</button>
                 </form>
             </section>            

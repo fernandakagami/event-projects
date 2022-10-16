@@ -1,0 +1,10 @@
+.input-container--invalido {
+    border: 1px solid red !important;    
+}
+
+.input-mensagem-erro {   
+    display: block; 
+    color: red;    
+    text-align: left;
+    margin-bottom: 20px;
+}

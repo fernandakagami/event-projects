@@ -204,13 +204,17 @@
                 <p>Fale conosco</p>
                 <form action="#" method="get">
                     <div class="form-group">
-                        <input id="name" type="text" name="name" class="form-control" placeholder="José Alencar" required>
                         <label for="name" class="form-control-label">Nome </label>
+                        <input id="name" type="text" name="name" class="form-control" placeholder="José Alencar" data-tipo="nome" required>                        
+                        <span></span>
                     </div>                 
-                    <textarea id="message" name="message" placeholder="Escreva sua mensagem." required></textarea>
+                    <div>
+                        <textarea id="message" name="message" placeholder="Escreva sua mensagem." data-tipo="mensagem" required></textarea>
+                        <span></span>    
+                    </div>                    
                     <button type="submit" class="form-button">Enviar Mensagem</button>
                 </form>
-            </section>            
+            </section>                
         </div>
     </div>           
             
@@ -220,7 +224,8 @@
     </footer>
     
     <script src="assets/js/products.js"></script>   
-    <script src="assets/js/search.js"></script>    
+    <script src="assets/js/search.js"></script>   
+    <script src="assets/js/input.js"></script> 
 </body>
 
 </html>

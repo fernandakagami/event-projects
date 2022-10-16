@@ -1,6 +1,7 @@
 @import url('reset.css');
 @import url('global.css');
 @import url('link-footer-style.css');
+@import url('erro-form.css');
 
 .header-container {
     width: 380px;
@@ -59,6 +60,10 @@
     border-radius: 20px;
 }
 
+input:-internal-autofill-selected {
+    background-color:rgb(232, 240, 254) !important;
+}
+
 .collapsible img {
     width: 20px;
 }
@@ -78,6 +83,7 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 .form-login {
     background-color: #F5F5F5;
+    text-align: center;
 }
 
 .login {
@@ -90,17 +96,19 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     padding: 100px 0 80px;
 }    
 
-.begin-session {
-    text-align: center;
+.begin-session {    
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
+}
 
+.login div {
+    width: 80%;
 }
 
 .login input {
-    width: 80%;
+    width: 100%;
     margin: 0 auto 20px;
     padding: 10px;
     border: 1px solid white;
