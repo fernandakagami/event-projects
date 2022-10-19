@@ -15,3 +15,9 @@ ccLogo.setAttribute("src", `public/cc-${type}.svg`);
 }
 
 setCartType('visa');
+
+const securityCode = document.querySelector('#security-code');
+const securityCodePattern = {
+    mask: "0000"
+}
+const securityCodeMasked = IMask(securityCode, securityCodePattern);
