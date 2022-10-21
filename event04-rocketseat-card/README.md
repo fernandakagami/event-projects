@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Rocketpay é um componente que simula o formulário de preenchimento de cartão de crédito, onde é possível adicionar máscara aos inputs e atualizar elementos HTML via DOM.
 
-<a href="https://fernandakagami.github.io/event-projects/event04-rocketseat-card/">link para o site</a>
+<a href="https://fernandakagami.github.io/event-projects/event04-rocketseat-card/">Link para o projeto</a>
 
 ## 🔖 Layout
 
